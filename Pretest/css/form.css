@@ -1,0 +1,27 @@
+html, body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #f1f1f1;
+    background: linear-gradient(45deg, #111111, #333333 70%);
+}
+
+#form-table {
+    border: groove;
+    border-color: aliceblue;
+    text-align: left;
+}
+
+.shaper {
+    border-radius: 5rem;
+}
+
+.submitButton {
+    border-radius: 2rem;
+    background: #1ebba3;
+}
+
+.resetButton {
+    border-radius: 2rem;
+    background: #f44336;
+}

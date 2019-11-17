@@ -1,0 +1,25 @@
+p {
+    margin-left: auto;
+}
+
+table, th,td {
+    border: groove;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.font-npm {
+    color: purple;
+    text-align: right;
+}
+
+.font-nama{
+    font-family: Arial;
+    size: 3;
+    text-align: right;
+}
+
+.table-color{
+    background-color: aqua;
+}

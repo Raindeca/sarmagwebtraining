@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan Javascript</title>
+</head>
+
+<body>
+    <h1>Tes defaultStatus</h1>
+    <script>
+        alert("Hallo!");
+        document.write("Hallo! <BR>");
+        document.write("Selamat belajar Javascript <br>");
+        document.write("Semuga Sukses");
+        var nama = prompt("Siapa nama anda?");
+        document.write("Hai, " + nama);
+        window.alert("This is a message fo you!");
+        var jawaban = window.confirm("Anda ingin meneruskan?");
+        document.write("Jawaban Anda: " + jawaban);
+        var VariabelKu;
+        var VariabelKu2 = 3;
+        VariabelKu = 2;
+        document.write(VariabelKu * VariabelKu2);
+
+        var a = 12;
+        var b = 4;
+        function perkalianDengan2(b) {
+            var a = b * 2;
+            return a;
+        }
+        document.write("Dua kali dari ", b, " Adalah", perkalianDengan2(b));
+        document.write("Nilai dari a adalah", a);
+
+        var a = parseInt("27");
+        document.write("1. " + a + "<BR>");
+        a = parseInt("27.5");
+        document.write("2. " + a + "<BR>");
+        a = parseInt("27A");
+        document.write("3. " + a + "<BR>");
+        a = parseInt("A27.5");
+        document.write("4. " + a + "<BR>");
+        a = parseFloat("27");
+        document.write("5. " + a + "<BR>");
+        a = parseFloat("27.5");
+        document.write("6. " + a + "<BR>");
+        a = parseFloat("27.5A");
+        document.write("7. " + a + "<BR>");
+        a = parseFloat("A27.5");
+        document.write("8. " + a + "<BR>");
+
+        document.write("20 + 3 = " + (20 + 3));
+        document.write("<BR>");
+        document.write("20 - 3 = " + (20 - 3));
+        document.write("<BR>");
+        document.write("20 * 3 = " + (20 * 3));
+        document.write("<BR>");
+        document.write("20 / 3 = " + (20 / 3));
+        document.write("<BR>");
+        document.write("20 % 3 = " + (20 % 3));
+        document.write("<BR>");
+
+        var nilai = prompt("Nilai (0-100): ", 0);
+        var hasil = (nilai >= 60) ? "Lulus" : "Tidak Lulus";
+        document.write("Hasil: " + hasil);
+
+        if (document.forms["Form1"].check_box.checked) { document.forms["Form1"].text_field.value = "Checkbox dipilih" }
+        else { document.forms["form1"].text_field.value = "Checkbox tidak dipilih" }
+
+        function tampilkanElementArray() {
+            for (var i = 0; i < this.length; i++) {
+                document.write("[" + i + "] = " + this[i] + "<BR>");
+            }
+        }
+
+        Array.prototype.cetak = tampilkanElementArray;
+        var musik = new Array("Jazz", "Rock", "Keroncong", "Dangdut");
+        var tanaman = new Array("Aglaonema", "Begolia", "Bromelia");
+        document.write("Isi array musik: ><BR>");
+        musik.cetak();
+        document.write("Isi array tanaman: ><BR>");
+        tanaman.cetak();
+    </script>
+</body>
+
+</html>

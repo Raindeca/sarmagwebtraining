@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/form.css">
+    <script src="./javascript/validation.js"></script>
+    <script src="./javascript/date.js"></script>
+    <title>Pretest Besok</title>
+</head>
+
+<body>
+    <marquee>Selamat datang dalam uji coba pretest ulangan javascript</marquee>
+    <br>
+    <p id="currentDate"></p>
+    <div>
+        <form name="valiForm" action="" method="POST" onsubmit="return validate()">
+            <table id="form-table">
+                <thead>
+                    Please fill this validation form before continue<br>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="name">Name : </label>
+                        </td>
+                        <td>
+                            <input class="shaper" type="text" name="name" max="25" maxlength="25">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="pass">password : </label>
+                        </td>
+                        <td>
+                            <input class="shaper" type="password" name="password" max="8" maxlength="8">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="repass">Re-password : </label>
+
+                        </td>
+                        <td>
+                            <input class="shaper" type="password" name="repassword" max="8" maxlength="8">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">E-mail : </label>
+                        </td>
+                        <td>
+                            <input class="shaper" type="email" name="email" onsubmit="return validateEmail()">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="address">Address : </label>
+                        </td>
+                        <td>
+                            <textarea  name="address" rows="3" cols="25"
+                                wrap="soft">Please fill your Address...</textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="matkul">Mata Kuliah : </label>
+                        </td>
+                        <td>
+                            <select name="matkul">
+                                <option value="">Grafik Komputer</option>
+                                <option value="">Pem.Berbasis WeB</option>
+                                <option value="">Pem.Berbasis Objek</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="religion">Agama</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="islam" value="i">Islam
+                            <input type="radio" name="Kristen" value="k">Kristen
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="submitButton" type="submit" value="Submit">
+                            <input class="resetButton" type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

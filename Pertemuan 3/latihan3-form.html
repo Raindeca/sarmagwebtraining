@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulir</title>
+</head>
+<body>
+    <form action="info.html" method="get">
+        Nama :
+        <input type="text" name="nama mahasiswa" size="20" maxlength="20">
+        <br>
+        NPM:
+        <input type="text" name="npm" size="25" maxlength="40">
+        <br>
+        Password:
+        <input type="password" name="password" size="8" maxlength="8">
+        <br>
+        Mata Kuliah yang Diambil: <br>
+        <input type="checkbox" name="pbw" checked>pemograman berbasis web
+        <br>
+        <input type="checkbox" name="pbo">pemograman berbasis object
+        <br>
+        <input type="checkbox" name="gaa">Graf dan Analisis Algoritma
+        <br>
+        Agama: <br>
+        <input type="radio" name="agama" value"i>Islam<br>
+        <input type="radio" name="agama" value"i>Kristen<br>
+
+        Musik yang Disukai: <br>
+        <select name="musik">
+            <option value="Artcore">Artcore</option>
+            <option value="Jazz">Jazz</option>
+            <option value="EDM">EDM</option>
+        </select>
+        <br>
+        Komentar Anda: <br>
+        <Textarea name="komentar" rows="5" cols="40" wrap>
+            abcderg
+        </Textarea>
+        <br>
+        <input type="submit" value="kirim">
+        <input type="reset" value="kosongkan">
+    </form>
+</body>
+</html>
