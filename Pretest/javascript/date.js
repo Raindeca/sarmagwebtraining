@@ -1,7 +1,7 @@
 document.getElementById("currentDate")
 
 var tanggal = new Date();
-    var kode_hari = tanggal.getDate;
+    var kode_hari = tanggal.getDay();
     var nama_hari = "";
 
     switch (kode_hari) {
@@ -28,4 +28,4 @@ var tanggal = new Date();
             break;
     }
 
-    document.write("Current Date : "+tanggal.getDate()+"/"+(tanggal.getMonth()+1)+"/"+(tanggal.getFullYear()));
+    document.write("Current Date : "+nama_hari+" "+tanggal.getDate()+"/"+(tanggal.getMonth()+1)+"/"+(tanggal.getFullYear()));
